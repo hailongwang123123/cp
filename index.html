@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>芯海科技（深圳）股份有限公司</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-wrapper">
+        <div class="header-container">
+            <a href="" class="logo">
+                <img src="img/logo.png">
+            </a>
+            <div class="header-menu">
+                <div class="header-menu-top"></div>
+                <div class="header-menu-middle1"></div>
+                <div class="header-menu-middle2"></div>
+                <div class="header-menu-bottom"></div>
+            </div>
+            <div class="header-language">
+                <img src="img/earth.png">
+                <span class="CN">CN</span>
+                <div class="header-language-box"><!--问题：设置z-index还是会被header-menu-con遮住-->
+                    <a href=""><img src="img/gq.png"><span>Chinese-简体中文</span></a>
+                    <a href=""><img src="img/ygq.png"><span>UK - English</span></a>
+                </div>
+            </div>
+            <div class="header-search">
+                <i class="fa fa-search"></i>
+            </div>
+            <ul class="header-nav">
+                <li><a href="index.html" class="header-nav-cl">首页</a></li>
+                <li>
+                    <a href="">解决方案</a>
+                    <div class="header-nav-dbox">
+                        <div class="header-nav-box">
+                            <a href="fa.html">健康测量</a>
+                            <a href="">智能电器</a>
+                            <a href="">电源管理</a>
+                            <a href="">压力触控</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">产品</a>
+                    <div class="header-nav-dbox">
+                        <div class="header-nav-box">
+                            <a href="cp.html">ADC/AFE</a>
+                            <a href="">MCU</a>
+                            <a href="">SOC</a>
+                            <a href="">Force Touch</a>
+                            <a href="">蓝牙</a>
+                            <a href="">WiFi</a>
+                            <a href="">芯联云/APP</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">服务支持</a>
+                    <div class="header-nav-dbox">
+                        <div class="header-nav-box">
+                            <a href="">客户服务</a>
+                            <a href="">服务政策</a>
+                            <a href="">下载中心</a>
+                            <a href="">开发者论坛</a>
+                            <a href="">样片申请</a>
+                            <a href="">监督投诉</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">关于芯海</a>
+                    <div class="header-nav-dbox">
+                        <div class="header-nav-box">
+                            <a href="gyxh.html">芯海简介</a>
+                            <a href="">新闻资讯</a>
+                            <a href="">荣誉资质</a>
+                            <a href="">合作伙伴</a>
+                            <a href="">投资者关系</a>
+                            <a href="">招贤纳士</a>
+                            <a href="">联系我们</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="header-nav-line"></div><!--问题：使用position()定位会失效-->
+        </div>
+        <ul class="header-menu-con">
+            <li class="header-menu-con-child">
+                <a href="index.html">
+                    <div class="header-menu-title"><span>首页</span><em></em></div>
+                </a>
+            </li>
+            <li class="header-menu-con-child">
+                <a href="">
+                    <div class="header-menu-title">
+                        <span>解决方案</span>
+                        <em><i class="fa fa-angle-down"></i></em>
+                    </div>
+                </a>
+                <ul class="header-menu-con-grandson">
+                    <li><a href="">健康测量</a></li>
+                    <li><a href="">智能电器</a></li>
+                    <li><a href="">电源管理</a></li>
+                    <li><a href="">压力触控</a></li>
+                </ul>
+            </li>
+            <li class="header-menu-con-child">
+                <a href="">
+                    <div class="header-menu-title">
+                        <span>产品</span>
+                        <em><i class="fa fa-angle-down"></i></em>
+                    </div>
+                </a>
+                <ul class="header-menu-con-grandson">
+                    <li><a href="cp.html">ADC/AFE</a></li>
+                    <li><a href="">MCU</a></li>
+                    <li><a href="">SOC</a></li>
+                    <li><a href="">Force Touch</a></li>
+                    <li><a href="">蓝牙</a></li>
+                    <li><a href="">WiFi</a></li>
+                    <li><a href="">芯联云/APP</a></li>
+                </ul>
+            </li>
+            <li class="header-menu-con-child">
+                <a href="#">
+                    <div class="header-menu-title">
+                        <span>服务与支持</span>
+                        <em><i class="fa fa-angle-down"></i></em>
+                    </div>
+                </a>
+                <ul class="header-menu-con-grandson">
+                    <li><a href="">客户服务</a></li>
+                    <li><a href="">服务政策</a></li>
+                    <li><a href="">下载中心</a></li>
+                    <li><a href="">开发者论坛</a></li>
+                    <li><a href="">样片申请</a></li>
+                    <li><a href="">监督投诉</a></li>
+                </ul>
+            </li>
+            <li class="header-menu-con-child">
+                <a href="gyxh.html">
+                    <div class="header-menu-title">
+                        <span>关于芯海</span>
+                        <em><i class="fa fa-angle-down"></i></em>
+                    </div>
+                </a>
+                <ul class="header-menu-con-grandson">
+                    <li><a href="">芯海简介</a></li>
+                    <li><a href="">新闻资讯</a></li>
+                    <li><a href="">荣誉资质</a></li>
+                    <li><a href="">合作伙伴</a></li>
+                    <li><a href="">投资者关系</a></li>
+                    <li><a href="">招贤纳士</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="space"></div>
+<div class="banner-con">
+    <div class="swiper-container" id="swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a class="aa" href="">
+                    <div class="bg1 bgx">
+                        <div class="bg_box1">
+                            <p class="bg1_m">高可靠8/32位MCU芯片设计公司</p>
+                        </div>
+                        <div class="d1 dd"><span>智能家电</span></div>
+                        <div class="d2 dd"><span>智能照明</span></div>
+                        <div class="d3 dd"><span>智能安防</span></div>
+                        <div class="d4 dd"><span>电机控制</span></div>
+                        <div class="d5 dd"><span>智慧健康</span></div>
+                        <div class="d6 dd"><span>智能穿戴</span></div>
+                        <div class="d7 dd"><span>智能机器</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="aa"  href="">
+                    <div class="bg2 bgx">
+                        <div class="bg_box2">
+                            <p class="bg2_m">高精度ADC/AFE模拟芯片设计公司</p>
+                            <p class="bg2_m1">始于2003年，15年专注信号测量领域</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="aa"  href="">
+                    <div class="bg3" bgx></div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="aa"  href="">
+                    <div class="bg4 bgx">
+                        <div class="bg_box4">
+                            <p class="bg4_m">提供IOT一站式解决方案的芯片设计公司</p>
+                            <p class="bg4_m1">智慧IC+无线模块+智能算法+云平台+APP一站式服务</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<main>
+    <div class="container container1">
+        <div class="container-t">明星产品</div>
+        <div class="container-con ">
+            <div class="swiper-container" id="swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="" class="con-move-card">
+                            <div class="con-move-card-box">
+                                <div class="card-img">
+                                    <img src="img/star1.png">
+                                </div>
+                                <div  class="card-con">
+                                    <div class="card-con-t">
+                                        CS1232
+                                    </div>
+                                    <div class="card-con-exp">
+                                        国内领先的高精度Sigma-Delta ADC
+                                    </div>
+                                    <p class="card-con-p">CS1232是一款高精度24位Sigmal-Delta模数转换器(ADC)，内部集成低噪声仪用放大器，集成RC振荡器。CS1232最高有效精度(ENOB)可达23.5位，可广泛应用于高精度测量领域。</p>
+                                    <div class="card-con-div">
+                                        <img src="img/more.png">
+                                        <div class="card-con-div-clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="con-move-card">
+                            <div class="con-move-card-box">
+                                <div class="card-img">
+                                    <img src="img/star2.png">
+                                </div>
+                                <div  class="card-con">
+                                    <div class="card-con-t">
+                                        CS1258
+                                    </div>
+                                    <div class="card-con-exp">
+                                        高新能模拟前端（AFE）
+                                    </div>
+                                    <p class="card-con-p">
+                                        芯海科技自主研发的高性能模拟前端产品CS1258，由一个ADC信号链和人体阻抗测量模块组成，具备8输入通道，支持多电极、多频率人体阻抗测量及分析，支持阻抗和相角测量、呼吸率和心率测量。</p>
+                                    <div class="card-con-div">
+                                        <img src="img/more.png">
+                                        <div class="card-con-div-clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="con-move-card">
+                            <div class="con-move-card-box">
+                                <div class="card-img">
+                                    <img src="img/star3.png">
+                                </div>
+                                <div  class="card-con">
+                                    <div class="card-con-t">
+                                        CSS34P16
+                                    </div>
+                                    <div class="card-con-exp">
+                                        国内首个可编程USB-PD控制器
+                                    </div>
+                                    <p class="card-con-p">内部集成了一个包括Rp、Rd电阻完整的TYPE-C型收发器和一个完全符合USB-PD协议规范的通信模块，可用于支持USB-PD的电源是适配。</p>
+                                    <div class="card-con-div">
+                                        <img src="img/more.png">
+                                        <div class="card-con-div-clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!--<div class="container-con-lb">
+                <div class="container-con-move">
+                    <a href="" class="con-move-card">
+                        <div class="con-move-card-box">
+                            <div class="card-img">
+                                <img src="img/star1.png">
+                            </div>
+                            <div  class="card-con">
+                                <div class="card-con-t">
+                                    CS1232
+                                </div>
+                                <div class="card-con-exp">
+                                    国内领先的高精度Sigma-Delta ADC
+                                </div>
+                                <p class="card-con-p">CS1232是一款高精度24位Sigmal-Delta模数转换器(ADC)，内部集成低噪声仪用放大器，集成RC振荡器。CS1232最高有效精度(ENOB)可达23.5位，可广泛应用于高精度测量领域。</p>
+                                <div class="card-con-div">
+                                    <img src="img/more.png">
+                                    <div class="card-con-div-clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="con-move-card">
+                        <div class="con-move-card-box">
+                            <div class="card-img">
+                                <img src="img/star2.png">
+                            </div>
+                            <div  class="card-con">
+                                <div class="card-con-t">
+                                    CS1258
+                                </div>
+                                <div class="card-con-exp">
+                                    高新能模拟前端（AFE）
+                                </div>
+                                <p class="card-con-p">
+                                    芯海科技自主研发的高性能模拟前端产品CS1258，由一个ADC信号链和人体阻抗测量模块组成，具备8输入通道，支持多电极、多频率人体阻抗测量及分析，支持阻抗和相角测量、呼吸率和心率测量。</p>
+                                <div class="card-con-div">
+                                    <img src="img/more.png">
+                                    <div class="card-con-div-clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="con-move-card">
+                        <div class="con-move-card-box">
+                            <div class="card-img">
+                                <img src="img/star3.png">
+                            </div>
+                            <div  class="card-con">
+                                <div class="card-con-t">
+                                    CSS34P16
+                                </div>
+                                <div class="card-con-exp">
+                                    国内首个可编程USB-PD控制器
+                                </div>
+                                <p class="card-con-p">内部集成了一个包括Rp、Rd电阻完整的TYPE-C型收发器和一个完全符合USB-PD协议规范的通信模块，可用于支持USB-PD的电源是适配。</p>
+                                <div class="card-con-div">
+                                    <img src="img/more.png">
+                                    <div class="card-con-div-clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="con-move-left">
+                    <
+                </div>
+                <div class="con-move-right">
+                    >
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <div class="container2-out">
+        <div class="container container2">
+            <div class="container-t">解决方案</div>
+            <div class="container2-con">
+                <div class="container2-con-left">
+                    <a href="" class="container2-con-left-box">
+                        <div class="container2-img">
+                            <img src="img/fa1.png">
+                        </div>
+                        <div class="container2-name">
+                            四/八电极智能体脂称一站式方案
+                        </div>
+                    </a>
+                    <a href="" class="container2-con-left-box">
+                        <div class="container2-img">
+                            <img src="img/fa2.png">
+                        </div>
+                        <div class="container2-name">
+                            四/八电极智能体脂称一站式方案
+                        </div>
+                    </a>
+                    <a href="" class="container2-con-left-box">
+                        <div class="container2-img">
+                            <img src="img/fa3.png">
+                        </div>
+                        <div class="container2-name">
+                            四/八电极智能体脂称一站式方案
+                        </div>
+                    </a>
+                    <a href="" class="container2-con-left-box">
+                        <div class="container2-img">
+                            <img src="img/fa4.png">
+                        </div>
+                        <div class="container2-name">
+                            四/八电极智能体脂称一站式方案
+                        </div>
+                    </a>
+                    <div class="container2-con-clear"></div>
+                </div>
+                <a href="" class="container2-con-right">
+                    <div class="container2-con-right-img">
+                        <img src="img/fa5.png">
+                    </div>
+                    <div class="container2-con-right-name">
+                        手机触控压力解决方案
+                    </div>
+                </a>
+                <div class="container2-con-clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container container3">
+        <div class="container-t">最新资讯</div>
+        <div class="container3-con">
+            <div class="container3-con-left">
+                <div class="container3-con-t">
+                    <span>新闻动态</span>
+                    <a href=""><img src="img/morej.png"></a>
+                </div>
+                <div class="container3-con-box">
+                    <div class="container3-con-box-list">
+                        <a href="" >热烈祝贺！芯海科技超低功耗BLE5.0 SoC CST92F30荣膺“2018 IoT技术创新奖”</a>
+                        <p>12月4日，由华强聚丰电子发烧友举办的2018第五届中国物联网大会在深圳国家会议中心召开。芯海科技凭借超低功耗 BLE5.0 SoC CST92F30摘得IoT技术创新奖。</p>
+                    </div>
+                    <div class="container3-con-box-list">
+                        <a href="" >芯海科技CS32G020获得USB IF协会PD3.0认证</a>
+                        <p>近日，芯海科技CS32G020已经正式通过了USB-IF协会USB PD3.0认证，在USB-IF官网，可以查询该芯片的认证TID号为147。据观察发现，目前国内仅三家快充芯片通过了USB IF协会PD3.0认证，芯海是其中一家，可见其研发实力和市场敏锐度都非常超前。</p>
+                    </div>
+                    <div class="container3-con-box-list  container3-con-box-list-bdn">
+                        <a href="" >芯海科技Force Touch压感解决方案再获魅族、小米青睐！</a>
+                        <p>
+                            同一日子，魅族发布16X新品、小米发布小米8系列新品！同一选择，芯海科技Force Touch屏内指纹识别压感解决方案再获魅族16X和小米8屏幕指纹版采用，创新压感技术将带来极致的人机交互新体验，为全面屏手机使用更添魅力！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container3-con-right">
+                <div class="container3-con-t">
+                    <span>媒体报道</span>
+                    <a href=""><img src="img/morej.png"></a>
+                </div>
+                <div class="container3-con-box">
+                    <div class="container3-con-box-list">
+                        <a href="">对话芯海科技董事长卢国建 | 深物协</a>
+                        <p>世界的物联看中国 ，中国的物联看深圳！作为科技之城、创新之都，深圳集合了中国70%以上物联网产业链，拥有一批极具产业特色、有前沿发展思路及创新技术、创新应用的优秀企业。近期，由深圳市物联网智能技术</p>
+                    </div>
+                    <div class="container3-con-box-list">
+                        <a href="">芯海科技王伟：如何用智慧IC体系撬动千亿家电产业？ | 电子发烧友专访</a>
+                        <p>作为国内集成电路、健康测量领域的领军企业，芯海科技SOC累计出货量达到4亿颗，在衡器（包括传统和智能）市场份额占据70%。芯海科技缘何能成为智能体脂秤技术发展的风向标？在智能家电市场又有何成绩和部署？智能电器产品线总经理王伟带来了相关解读。。</p>
+                    </div>
+                    <div class="container3-con-box-list  container3-con-box-list-bdn">
+                        <a href="">招商街道开展“党代表接待周”活动 党代表调研企业党建 | 深圳新闻网</a>
+                        <p>深圳新闻网讯（记者 曹文丽）为积极发挥党代表的作用，进一步密切党代表和群众的联系，9月15日下午，南山区招商街道开展了“党代表接待周”活动。南山区委副书记、</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container2-con-clear"></div>
+        </div>
+    </div>
+    <div class="help-bg">
+        <div class="container help">
+            <div class="container-t">是否需要更多帮助？</div>
+            <div class="help-con">
+                <div class="help-con-list">
+                    <a href="">
+                        <img src="img/help1.png">
+                    </a>
+                    <div class="help-con-list-name">
+                        服务中心
+                    </div>
+                </div>
+                <div class="help-con-list">
+                    <a href="">
+                        <img src="img/help2.png">
+                    </a>
+                    <div class="help-con-list-name">
+                        下载中心
+                    </div>
+                </div>
+                <div class="help-con-list">
+                    <a href="">
+                        <img src="img/help3.png">
+                    </a>
+                    <div class="help-con-list-name">
+                        合作伙伴
+                    </div>
+                </div>
+                <div class="help-con-list">
+                    <a href="">
+                        <img src="img/help4.png">
+                    </a>
+                    <div class="help-con-list-name">
+                        荣誉资质
+                    </div>
+                </div>
+                <div class="card-con-div-clear"></div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-bg">
+        <div class="container">
+            <div class=" footer-con-left">
+                <div class="footer-con-left-m">
+                    <ul class="footer-menu-con">
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>解决方案</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="fa.html">健康测量</a></li>
+                                <li><a href="">智能电器</a></li>
+                                <li><a href="">电源管理</a></li>
+                                <li><a href="">压力触控</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>芯海产品</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="cp.html">ADC/AFE</a></li>
+                                <li><a href="">MCU</a></li>
+                                <li><a href="">SOC</a></li>
+                                <li><a href="">Force Touch</a></li>
+                                <li><a href="">蓝牙</a></li>
+                                <li><a href="">WiFi</a></li>
+                                <li><a href="">芯联云/APP</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>服务支持</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="">服务中心</a></li>
+                                <li><a href="">服务政策</a></li>
+                                <li><a href="">下载中心</a></li>
+                                <li><a href="">开发者论坛</a></li>
+                                <li><a href="">样片申请</a></li>
+                                <li><a href="">客诉服务</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>关于芯海</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="gyxh.html">芯海简介</a></li>
+                                <li><a href="">新闻资讯</a></li>
+                                <li><a href="">荣誉资质</a></li>
+                                <li><a href="">合作伙伴</a></li>
+                                <li><a href="">投资者关系</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>联系我们</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="">招贤纳士</a></li>
+                                <li><a href="">联系方式</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-con-left-pc">
+                <div class="footer-con-list">
+                    <div class="footer-con-list-t">
+                        解决方案
+                    </div>
+                    <ul class="footer-con-list-con">
+                        <li><a href="fa.html">健康测量</a></li>
+                        <li><a href="">智能电器</a></li>
+                        <li><a href="">电源管理</a></li>
+                        <li><a href="">压力触控</a></li>
+                    </ul>
+                </div>
+                <div class="footer-con-list">
+                    <div class="footer-con-list-t">
+                        芯海产品
+                    </div>
+                    <ul class="footer-con-list-con">
+                        <li><a href="cp.html">ADC/AFE</a></li>
+                        <li><a href="">MCU</a></li>
+                        <li><a href="">SOC</a></li>
+                        <li><a href="">Force Touch</a></li>
+                        <li><a href="">蓝牙</a></li>
+                        <li><a href="">WiFi</a></li>
+                        <li><a href="">芯联云/APP</a></li>
+                    </ul>
+                </div>
+                <div class="footer-con-list">
+                    <div class="footer-con-list-t">
+                        服务支持
+                    </div>
+                    <ul class="footer-con-list-con">
+                        <li><a href="">服务中心</a></li>
+                        <li><a href="">服务政策</a></li>
+                        <li><a href="">下载中心</a></li>
+                        <li><a href="">开发者论坛</a></li>
+                        <li><a href="">样片申请</a></li>
+                        <li><a href="">客诉服务</a></li>
+                    </ul>
+                </div>
+                <div class="footer-con-list">
+                    <div class="footer-con-list-t">
+                        关于芯海
+                    </div>
+                    <ul class="footer-con-list-con">
+                        <li><a href="gyxh.html">芯海简介</a></li>
+                        <li><a href="">新闻资讯</a></li>
+                        <li><a href="">荣誉资质</a></li>
+                        <li><a href="">合作伙伴</a></li>
+                        <li><a href="">投资者关系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-con-list">
+                    <div class="footer-con-list-t">
+                        联系我们
+                    </div>
+                    <ul class="footer-con-list-con">
+                        <li><a href="">招贤纳士</a></li>
+                        <li><a href="">联系方式</a></li>
+                    </ul>
+                </div>
+                <div class="card-con-div-clear"></div>
+            </div>
+            </div>
+            <div class=" footer-con-right">
+                <div class="footer-con-right-contact">
+                    <div class="footer-con-right-contact-left">
+                        <div class="footer-con-right-phone">
+                            0755-86169257
+                        </div>
+                        <div class="footer-con-right-time">
+                            ( 周一至周五 9:00 - 18:00 )
+                        </div>
+                    </div>
+                    <a href="" class="footer-con-right-contact-right">
+                        在线咨询
+                    </a>
+                    <div class="card-con-div-clear"></div>
+                </div>
+                <div class="footer-con-right-contact footer-con-right-site">
+                    <div class="footer-con-right-site1">
+                        <img src="img/site.png">
+                        深圳市南山区南海大道1079号花园城数码大厦A座9层
+                    </div>
+                    <div class="footer-con-right-site2">
+                        <img src="img/site2.png">
+                        sales@chipsea.com
+                    </div>
+                </div>
+                <div class="footer-con-right-wxm">
+                    <div class="footer-con-right-wxm1">
+                        <img src="img/wx1.jpg">
+                        <div class="wxm1-name">
+                            微信公众号
+                        </div>
+                    </div>
+                    <div class="footer-con-right-wxm1">
+                        <img src="img/wx2.jpg">
+                        <div class="wxm1-name">
+                            OKOK健康
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-con-div-clear"></div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        版权所有 © 芯海科技（深圳）股份有限公司 <span>|</span> 粤ICP备12084523号<span>|</span>深圳网站建设：卓越迈创
+    </div>
+</footer>
+    <script>
+        //头部的代码-----------------------------------------------
+        var menu_middle=true;//定义变量为true
+        /*var ev=e||event;*///问题：怎么设置对你火狐event的兼容；
+        function load(){
+            if($(".header-menu-con").width()>980){//设置header-menu-con宽度大于980时隐藏
+                $(".banner-con").height(700);
+            }else{
+                $(".banner-con").height(($(this).width()*0.62));
+            }
+        }
+        load();//初始化.banner-con的高度；
+        $(window).resize(function(){
+            $(".header-nav-line").css("left",$(".header-nav li").children("a").offset().left+"px");
+            $(".header-menu-con").width();
+            if($(".header-menu-con").width()>980){//设置header-menu-con宽度大于980时隐藏
+                $(".header-menu-con").hide();
+                $(".banner-con").height(700);
+            }else{
+                $(".banner-con").height(($(this).width()*0.62));
+                if(menu_middle==false){//条则调整menu按钮与盒子隐藏或显示不同步的问题
+                    $(".header-menu-con").show()
+                }else{
+                    $(".header-menu-con").hide()
+                }
+            }
+           /* console.log($(".container").width());*/
+            if($(window).width<=453){
+                console.log($(".container").width());
+                $(".con-move-card").Width($(".container").width()*1)
+            }
+            if($(window).width<=980){
+                console.log($(".container").width());
+                $(".con-move-card").Width($(".container").width()*0.5)
+            }
+            /*if($(window).width<=1280){
+                console.log($(".container").width());
+                $(".con-move-card").Width($(".container").width()*0.333)
+            }*/
+
+        });
+        //刷新页面，获取li标签的宽度，设置line的宽度
+        $(".header-nav-line").width($(".header-nav li").first().width());
+        //刷新页面，获取li标签与父标签左侧的距离，设置line的left值
+        $(".header-nav-line").css("left",$(".header-nav li").children("a").offset().left+"px");
+        $(".header-nav li").hover(
+                function(){
+                //设置线条的宽度和位置
+                    $(".header-nav-line").width($(this).width());
+                    $(".header-nav-line").css("left",$(this).children("a").offset().left+"px");
+                     $(this).children(".header-nav-dbox").css("display","block");
+                    $(this).children(".header-nav-dbox").stop().animate({opacity:"1",top:"68px"},500);
+        },
+                function(){
+               //移出时线条恢复初始位置
+                    $(".header-nav-line").width($(".header-nav li").first().width());
+                    $(".header-nav-line").css("left",$(".header-nav li").children("a").offset().left+"px");
+                    $(this).children(".header-nav-dbox").css("display","none");
+                    $(this).children(".header-nav-dbox").stop().animate({opacity:"0",top:"50px"},0);
+          }
+        );
+
+        $(".header-menu").click(function(){
+            $(".header-menu-top").toggle();//显示隐藏转换
+            $(".header-menu-bottom").toggle();
+            $(".header-menu-con").slideToggle();//显示隐藏切换
+            if(menu_middle==false){
+                //如果false 那么header-menu就恢复初始位置
+                $(".header-menu-middle1").css({transform:"rotate(0deg)",transition:""});
+                $(".header-menu-middle2").css({transform:"rotate(0deg)",transition:""});
+                menu_middle=true;
+            }else{
+                //如果true header-menu就变成X；
+                $(".header-menu-middle1").css({transform:"rotate(45deg)",transition:"all 0.4s"});
+                $(".header-menu-middle2").css({transform:"rotate(-45deg)",transition:"all 0.4s"});
+                menu_middle=false;
+            }
+        });
+        $(".header-menu-title").click(function(){
+            $(".header-menu-con-child").find("span").css("color","");//清空颜色
+            $(this).find("span").css("color","#C6361F");//设置颜色
+            event.stopPropagation();
+        });
+        $(".header-menu-title em").click(function(){
+            $(this).parent().parent().parent().siblings().children("ul").slideUp();//让父标签的兄弟标签的子标签 隐藏
+            $(this).parent().parent().siblings("ul").slideToggle();
+            event.stopPropagation();
+        });
+
+        //swiperjs-------------------
+        $(".bg1").css("transform","scale(1,1)");
+        $(".bg1_m").addClass("bg1_m_a");
+        $(".d1").delay(100).animate({opacity:1},500);
+        $(".d2").delay(600).animate({opacity:1},500);
+        $(".d3").delay(1200).animate({opacity:1},500);
+        $(".d4").delay(400).animate({opacity:1},500);
+        $(".d5").delay(800).animate({opacity:1},500);
+        $(".d6").delay(500).animate({opacity:1},500);
+        $(".d7").delay(220).animate({opacity:1},500);
+        var swiper1 = new Swiper('#swiper1', {
+            speed: 500,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            on: {
+                slideChangeTransitionStart: function(){
+                    $(".bgx").css("transform","scale(1.2,1.2)");
+                    $(".bg1_m").removeClass("bg1_m_a");
+                    $(".bg2_m").removeClass("bg2_m_a");
+                    $(".bg2_m1").removeClass("bg2_m1_a");
+                    $(".bg4_m").removeClass("bg4_m_a");
+                    $(".bg4_m1").removeClass("bg4_m1_a");
+                    /*$(".d1").removeClass("d1_a");*/
+                    $(".d1").delay().animate({opacity:0},500);
+                    $(".d2").delay().animate({opacity:0},500);
+                    $(".d3").delay().animate({opacity:0},500);
+                    $(".d4").delay().animate({opacity:0},500);
+                    $(".d5").delay().animate({opacity:0},500);
+                    $(".d6").delay().animate({opacity:0},500);
+                    $(".d7").delay().animate({opacity:0},500);
+                    if(this.activeIndex==0){
+                        $(".bg1").css("transform","scale(1,1)");
+                        $(".bg1_m").addClass("bg1_m_a");
+                        $(".d1").delay(100).animate({opacity:1},500);
+                        $(".d2").delay(600).animate({opacity:1},500);
+                        $(".d3").delay(1200).animate({opacity:1},500);
+                        $(".d4").delay(400).animate({opacity:1},500);
+                        $(".d5").delay(800).animate({opacity:1},500);
+                        $(".d6").delay(500).animate({opacity:1},500);
+                        $(".d7").delay(220).animate({opacity:1},500);
+                    }
+                    if(this.activeIndex==1){
+                        $(".bg2_m").addClass("bg2_m_a");
+                        $(".bg2_m1").addClass("bg2_m1_a");
+                        $(".bg2").css("transform","scale(1,1)");
+                    }
+                    if(this.activeIndex==2){
+                        $(".bg3").css("transform","scale(1,1)")
+                    }
+                    if(this.activeIndex==3){
+                        $(".bg4").css("transform","scale(1,1)");
+                        $(".bg4_m").addClass("bg4_m_a");
+                        $(".bg4_m1").addClass("bg4_m1_a");
+                    }
+                },
+            },
+        });
+        var swiper2 = new Swiper('#swiper2', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+           /* slidesPerGroup: 3,*/
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints:{
+                980:{slidesPerView:2},
+                580:{slidesPerView:1}
+            }
+        });
+
+
+        /*var card=0;
+        $(".con-move-right").click(function(){
+            card++;
+            var widths=$(".container-con-move").width(($(".con-move-card").eq(0).innerWidth())*3);
+            $(".container-con-move").css({marginLeft:$(".con-move-card").eq(0).innerWidth()*-card+"px"})
+        })*/
+       /* console.log($(".con-move-card").innerWidth($(".container").width()*0.3333))*/
+
+    //首页第二个手风琴效果
+        $(".footer-menu-con-child").click(function(){
+            $(this).siblings().children(".footer-menu-con-grandson").slideUp();
+            $(this).children(".footer-menu-con-grandson").slideToggle();
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>芯海科技（深圳）股份有限公司</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/fa.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/touch.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-wrapper">
+        <div class="header-container">
+            <a href="" class="logo">
+                <img src="img/logo.png">
+            </a>
+            <div class="header-menu">
+                <div class="header-menu-top"></div>
+                <div class="header-menu-middle1"></div>
+                <div class="header-menu-middle2"></div>
+                <div class="header-menu-bottom"></div>
+            </div>
+            <div class="header-language">
+                <img src="img/earth.png">
+                <span class="CN">CN</span>
+                <div class="header-language-box"><!--问题：设置z-index还是会被header-menu-con遮住-->
+                    <a href=""><img src="img/gq.png"><span>Chinese-简体中文</span></a>
+                    <a href=""><img src="img/ygq.png"><span>UK - Englisg</span></a>
+                </div>
+            </div>
+            <div class="header-search">
+                <i class="fa fa-search"></i>
+            </div>
+            <ul class="header-nav">
+                <li><a href="index.html" class="header-nav-cl">首页</a></li>
+                <li>
+                    <a href="">解决方案</a>
+                    <div class="header-nav-dbox">
+                        <div class="header-nav-box">
+                            <a href="fa.html">健康测量</a>
+                            <a href="">智能电器</a>
+                            <a href="">电源管理</a>
+                            <a href="">压力触控</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">产品</a>
+                    <div class="header-nav-dbox">
+                        <div class="header-nav-box">
+                            <a href="cp.html">ADC/AFE</a>
+                            <a href="">MCU</a>
+                            <a href="">SOC</a>
+                            <a href="">Force Touch</a>
+                            <a href="">蓝牙</a>
+                            <a href="">WiFi</a>
+                            <a href="">芯联云/APP</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">服务支持</a>
+                    <div class="header-nav-dbox">
+                        <div class="header-nav-box">
+                            <a href="">客户服务</a>
+                            <a href="">服务政策</a>
+                            <a href="">下载中心</a>
+                            <a href="">开发者论坛</a>
+                            <a href="">样片申请</a>
+                            <a href="">监督投诉</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">关于芯海</a>
+                    <div class="header-nav-dbox">
+                        <div class="header-nav-box">
+                            <a href="gyxh.html">芯海简介</a>
+                            <a href="">新闻资讯</a>
+                            <a href="">荣誉资质</a>
+                            <a href="">合作伙伴</a>
+                            <a href="">投资者关系</a>
+                            <a href="">招贤纳士</a>
+                            <a href="">联系我们</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="header-nav-line"></div><!--问题：使用position()定位会失效-->
+        </div>
+        <ul class="header-menu-con">
+            <li class="header-menu-con-child">
+                <a href="index.html">
+                    <div class="header-menu-title"><span>首页</span><em></em></div>
+                </a>
+            </li>
+            <li class="header-menu-con-child">
+                <a href="">
+                    <div class="header-menu-title">
+                        <span>解决方案</span>
+                        <em><i class="fa fa-angle-down"></i></em>
+                    </div>
+                </a>
+                <ul class="header-menu-con-grandson">
+                    <li><a href="fa.html">健康测量</a></li>
+                    <li><a href="">智能电器</a></li>
+                    <li><a href="">电源管理</a></li>
+                    <li><a href="">压力触控</a></li>
+                </ul>
+            </li>
+            <li class="header-menu-con-child">
+                <a href="">
+                    <div class="header-menu-title">
+                        <span>产品</span>
+                        <em><i class="fa fa-angle-down"></i></em>
+                    </div>
+                </a>
+                <ul class="header-menu-con-grandson">
+                    <li><a href="cp.html">ADC/AFE</a></li>
+                    <li><a href="">MCU</a></li>
+                    <li><a href="">SOC</a></li>
+                    <li><a href="">Force Touch</a></li>
+                    <li><a href="">蓝牙</a></li>
+                    <li><a href="">WiFi</a></li>
+                    <li><a href="">芯联云/APP</a></li>
+                </ul>
+            </li>
+            <li class="header-menu-con-child">
+                <a href="#">
+                    <div class="header-menu-title">
+                        <span>服务与支持</span>
+                        <em><i class="fa fa-angle-down"></i></em>
+                    </div>
+                </a>
+                <ul class="header-menu-con-grandson">
+                    <li><a href="">客户服务</a></li>
+                    <li><a href="">服务政策</a></li>
+                    <li><a href="">下载中心</a></li>
+                    <li><a href="">开发者论坛</a></li>
+                    <li><a href="">样片申请</a></li>
+                    <li><a href="">监督投诉</a></li>
+                </ul>
+            </li>
+            <li class="header-menu-con-child">
+                <a href="">
+                    <div class="header-menu-title">
+                        <span>关于芯海</span>
+                        <em><i class="fa fa-angle-down"></i></em>
+                    </div>
+                </a>
+                <ul class="header-menu-con-grandson">
+                    <li><a href="gyxh.html">芯海简介</a></li>
+                    <li><a href="">新闻资讯</a></li>
+                    <li><a href="">荣誉资质</a></li>
+                    <li><a href="">合作伙伴</a></li>
+                    <li><a href="">投资者关系</a></li>
+                    <li><a href="">招贤纳士</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-f">
+            <div class="contaner nav-fl">
+                <a href="">测量健康</a><span>|</span>
+                <a href="" class="nav-fl-cl"> 四/八电极体脂秤 </a><span>|</span>
+                <a href="">智能计价秤</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="space"></div>
+<!--内容开始-------------------------------------------------------------------------------->
+
+<main>
+    <div class="banner">
+        <div class="ba">
+            <div class="ba-left">
+                四/八电极智能体脂秤解决方案
+            </div>
+            <div class="ba-right">
+                芯海科技提供 智慧IC + BLE/WiFi模块 + 标准化方案/算法 + 芯联云 +
+                超级APP 一站式解决方案，帮助合作伙伴低成本、快速完成硬件智能化。
+            </div>
+        </div>
+        <div class="dd2">
+            <img src="img/dd2.png">
+        </div>
+
+    </div>
+    <div class="part">
+        <div class="container">
+            <div class="part-t">
+                组成部分
+            </div>
+            <div class="part-con">
+                <div class="part-con-list ml-none1">
+                    <div class="part-con-list-img">
+                        <img src="img/solCMM-1.png">
+                    </div>
+                    <div class="part-con-list-t1">
+                        高性能AFE模拟前端芯片
+                    </div>
+                    <div class="part-con-list-t2">
+                        CS1256-四电极生物阻抗测量芯片
+                    </div>
+                    <span class="part-con-list-line"></span>
+                    <div class="part-con-list-con">
+                        带24bits ADC及BIM，支持多电极、多频率人体阻抗测量，精度高达19.5 Bit
+                    </div>
+
+                </div>
+                <div class="part-con-list">
+                    <div class="part-con-list-img">
+                        <img src="img/solCMM-1.png">
+                    </div>
+                    <div class="part-con-list-t1">
+                        高性能AFE模拟前端芯片
+                    </div>
+                    <div class="part-con-list-t2">
+                        CS1258-八电极生物阻抗测量芯片
+                    </div>
+                    <span class="part-con-list-line"></span>
+                    <div class="part-con-list-con">
+                        具有5通道高精度24bits ADC和人体阻抗测量功能，支持多达八电极多频率交流测脂
+                    </div>
+
+                </div>
+                <div class="part-con-list ml-none ml-none1">
+                    <div class="part-con-list-img">
+                        <img src="img/solCMM-1.png">
+                    </div>
+                    <div class="part-con-list-t1">
+                        低功耗蓝牙SOC
+                    </div>
+                    <div class="part-con-list-t2">
+                        CST34M97 / CST34M98
+                    </div>
+                    <span class="part-con-list-line"></span>
+                    <div class="part-con-list-con">
+                        基于低功耗蓝牙4.1协议栈，适用于蓝牙低功耗、低成本、高性能的无线MCU
+                    </div>
+
+                </div>
+                <div class="part-con-list none">
+                    <div class="part-con-list-img">
+                        <img src="img/solCMM-2.png">
+                    </div>
+                    <div class="part-con-list-t1">
+                        PaaS+SaaS云平台
+                    </div>
+                    <div class="part-con-list-t2">
+                        芯联云
+                    </div>
+                    <span class="part-con-list-line"></span>
+                    <div class="part-con-list-con">
+                        提供软硬件一站式解决方案，帮助合作伙伴低成本、快速完成硬件智能化
+                    </div>
+                </div>
+                <div class="part-con-list none">
+                    <div class="part-con-list-img">
+                        <img src="img/solCMM-3.png">
+                    </div>
+                    <div class="part-con-list-t1">
+                        健康管理APP
+                    </div>
+                    <div class="part-con-list-t2">
+                        OKOK健康
+                    </div>
+                    <span class="part-con-list-line"></span>
+                    <div class="part-con-list-con">
+                        具备体征测量分析、营养/运动/健康管理，及社交功能
+                    </div>
+                </div>
+                <div class="box-clear"></div>
+                <div class="dd3">
+                    <img src="img/dd3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="td">
+            <div class="td-bg">
+                <img src="img/solPROG-1.jpg">
+            </div>
+            <div class="td-r">
+                <div class="td-r-con">
+                    <div class="td-r-con-t"   >
+                        方案特点
+                    </div>
+                    <div class="td-r-con-c"><span></span>支持多达八电极多频率交流测脂</div>
+                    <div class="td-r-con-c"><span></span>采用恒流方式，安全可靠</div>
+                    <div class="td-r-con-c"><span></span>采用国内首颗单芯片蓝牙SOC</div>
+                    <div class="td-r-con-c"><span></span>内置有效位高达19Bit的高精度ADC</div>
+                    <div class="td-r-con-c"><span></span>提供交流测脂算法库、PaaS+SaaS云和APP</div>
+                </div>
+            </div>
+        <div class="box-clear"></div>
+    </div>
+    <div class="jstd">
+        <div class="container">
+        <div class="jstd-t">技术特点</div>
+        <div class="jstd-con">
+            <div class="jstd-left">
+                <div class="td-r-con-c"><span></span>支持多达八电极多频率交流测脂</div>
+                <div class="td-r-con-c"><span></span>采用恒流方式，安全可靠</div>
+                <div class="td-r-con-c"><span></span>采用国内首颗单芯片蓝牙SOC</div>
+                <div class="td-r-con-c"><span></span>内置有效位高达19Bit的高精度ADC</div>
+                <div class="td-r-con-c"><span></span>提供交流测脂算法库、PaaS+SaaS云和APP</div>
+            </div>
+            <div class="jstd-right"><div class="td-r-con-c"><span></span>支持多达八电极多频率交流测脂</div>
+                <div class="td-r-con-c"><span></span>采用恒流方式，安全可靠</div>
+                <div class="td-r-con-c"><span></span>采用国内首颗单芯片蓝牙SOC</div>
+                <div class="td-r-con-c"><span></span>内置有效位高达19Bit的高精度ADC</div>
+                <div class="td-r-con-c"><span></span>提供交流测脂算法库、PaaS+SaaS云和APP</div></div>
+            <div class="box-clear"></div>
+        </div>
+    </div>
+    </div>
+    <div class="tp">
+        <img src="img/solAD-1.jpg">
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--内容结束-------------------------------------------------------------------------------->
+<footer>
+    <div class="footer-bg">
+        <div class="container">
+            <div class=" footer-con-left">
+                <div class="footer-con-left-m">
+                    <ul class="footer-menu-con">
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>解决方案</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="fa.html">健康测量</a></li>
+                                <li><a href="">智能电器</a></li>
+                                <li><a href="">电源管理</a></li>
+                                <li><a href="">压力触控</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>芯海产品</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="cp.html">ADC/AFE</a></li>
+                                <li><a href="">MCU</a></li>
+                                <li><a href="">SOC</a></li>
+                                <li><a href="">Force Touch</a></li>
+                                <li><a href="">蓝牙</a></li>
+                                <li><a href="">WiFi</a></li>
+                                <li><a href="">芯联云/APP</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>服务支持</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="">服务中心</a></li>
+                                <li><a href="">服务政策</a></li>
+                                <li><a href="">下载中心</a></li>
+                                <li><a href="">开发者论坛</a></li>
+                                <li><a href="">样片申请</a></li>
+                                <li><a href="">客诉服务</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>关于芯海</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="gyxh.html">芯海简介</a></li>
+                                <li><a href="">新闻资讯</a></li>
+                                <li><a href="">荣誉资质</a></li>
+                                <li><a href="">合作伙伴</a></li>
+                                <li><a href="">投资者关系</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-menu-con-child">
+                            <div>
+                                <div class="footer-menu-title">
+                                    <span>联系我们</span>
+                                    <em><i class="fa fa-angle-down"></i></em>
+                                </div>
+                            </div>
+                            <ul class="footer-menu-con-grandson">
+                                <li><a href="">招贤纳士</a></li>
+                                <li><a href="">联系方式</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-con-left-pc">
+                    <div class="footer-con-list">
+                        <div class="footer-con-list-t">
+                            解决方案
+                        </div>
+                        <ul class="footer-con-list-con">
+                            <li><a href="fa.html">健康测量</a></li>
+                            <li><a href="">智能电器</a></li>
+                            <li><a href="">电源管理</a></li>
+                            <li><a href="">压力触控</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-con-list">
+                        <div class="footer-con-list-t">
+                            芯海产品
+                        </div>
+                        <ul class="footer-con-list-con">
+                            <li><a href="cp.html">ADC/AFE</a></li>
+                            <li><a href="">MCU</a></li>
+                            <li><a href="">SOC</a></li>
+                            <li><a href="">Force Touch</a></li>
+                            <li><a href="">蓝牙</a></li>
+                            <li><a href="">WiFi</a></li>
+                            <li><a href="">芯联云/APP</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-con-list">
+                        <div class="footer-con-list-t">
+                            服务支持
+                        </div>
+                        <ul class="footer-con-list-con">
+                            <li><a href="">服务中心</a></li>
+                            <li><a href="">服务政策</a></li>
+                            <li><a href="">下载中心</a></li>
+                            <li><a href="">开发者论坛</a></li>
+                            <li><a href="">样片申请</a></li>
+                            <li><a href="">客诉服务</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-con-list">
+                        <div class="footer-con-list-t">
+                            关于芯海
+                        </div>
+                        <ul class="footer-con-list-con">
+                            <li><a href="gyxh.html">芯海简介</a></li>
+                            <li><a href="">新闻资讯</a></li>
+                            <li><a href="">荣誉资质</a></li>
+                            <li><a href="">合作伙伴</a></li>
+                            <li><a href="">投资者关系</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-con-list">
+                        <div class="footer-con-list-t">
+                            联系我们
+                        </div>
+                        <ul class="footer-con-list-con">
+                            <li><a href="">招贤纳士</a></li>
+                            <li><a href="">联系方式</a></li>
+                        </ul>
+                    </div>
+                    <div class="box-clear"></div>
+                </div>
+            </div>
+            <div class=" footer-con-right">
+                <div class="footer-con-right-contact">
+                    <div class="footer-con-right-contact-left">
+                        <div class="footer-con-right-phone">
+                            0755-86169257
+                        </div>
+                        <div class="footer-con-right-time">
+                            ( 周一至周五 9:00 - 18:00 )
+                        </div>
+                    </div>
+                    <a href="" class="footer-con-right-contact-right">
+                        在线咨询
+                    </a>
+                    <div class="box-clear"></div>
+                </div>
+                <div class="footer-con-right-contact footer-con-right-site">
+                    <div class="footer-con-right-site1">
+                        <img src="img/site.png">
+                        深圳市南山区南海大道1079号花园城数码大厦A座9层
+                    </div>
+                    <div class="footer-con-right-site2">
+                        <img src="img/site2.png">
+                        sales@chipsea.com
+                    </div>
+                </div>
+                <div class="footer-con-right-wxm">
+                    <div class="footer-con-right-wxm1">
+                        <img src="img/wx1.jpg">
+                        <div class="wxm1-name">
+                            微信公众号
+                        </div>
+                    </div>
+                    <div class="footer-con-right-wxm1">
+                        <img src="img/wx2.jpg">
+                        <div class="wxm1-name">
+                            OKOK健康
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-clear"></div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        版权所有 © 芯海科技（深圳）股份有限公司 <span>|</span> 粤ICP备12084523号<span>|</span>深圳网站建设：卓越迈创
+    </div>
+</footer>
+<script>
+    //头部的代码-----------------------------------------------
+    var menu_middle=true;//定义变量为true
+    /*var ev=e||event;*///问题：怎么设置对你火狐event的兼容；
+
+    function load(){
+     if($(window).width()<=768){
+     $(".td-bg").height($(".td-bg").width()*0.625)
+     }else{
+     $(".td-bg").height(600)
+     }
+    }
+    load();//初始化.banner-con的高度；*/
+    $(window).resize(function(){
+        $(".header-nav-line").css("left",$(".header-nav li").children("a").offset().left+"px");
+        $(".header-menu-con").width();
+        if($(".header-menu-con").width()>980){//设置header-menu-con宽度大于980时隐藏
+            $(".banner-con").height(700);
+            $(".header-menu-con").hide();
+        }else{
+            $(".banner-con").height(($(this).width()*0.62));
+            if(menu_middle==false){//条则调整menu按钮与盒子隐藏或显示不同步的问题
+                $(".header-menu-con").show()
+            }else{
+                $(".header-menu-con").hide()
+            }
+        }
+        if($(window).width()<=1200){
+            console.log($(".container").width());
+        }
+        if($(window).width()<=980){
+            console.log($(".container").width());
+        }
+
+        if($(window).width()<=768){
+            $(".td-bg").height($(".td-bg").width()*0.625)
+        }else{
+            $(".td-bg").height(600)
+        }
+    });
+    //刷新页面，获取li标签的宽度，设置line的宽度
+    $(".header-nav-line").width($(".header-nav li").first().width());
+    //刷新页面，获取li标签与父标签左侧的距离，设置line的left值
+    $(".header-nav-line").css("left",$(".header-nav li").children("a").offset().left+"px");
+    $(".header-nav li").hover(
+            function(){
+                //设置线条的宽度和位置
+                $(".header-nav-line").width($(this).width());
+                $(".header-nav-line").css("left",$(this).children("a").offset().left+"px");
+                $(this).children(".header-nav-dbox").css("display","block");
+                $(this).children(".header-nav-dbox").stop().animate({opacity:"1",top:"68px"},500);
+            },
+            function(){
+                //移出时线条恢复初始位置
+                $(".header-nav-line").width($(".header-nav li").first().width());
+                $(".header-nav-line").css("left",$(".header-nav li").children("a").offset().left+"px");
+                $(this).children(".header-nav-dbox").css("display","none");
+                $(this).children(".header-nav-dbox").stop().animate({opacity:"0",top:"50px"},0);
+            }
+    );
+
+    $(".header-menu").click(function(){
+        $(".header-menu-top").toggle();//显示隐藏转换
+        $(".header-menu-bottom").toggle();
+        $(".header-menu-con").slideToggle();//显示隐藏切换
+        if(menu_middle==false){
+            //如果false 那么header-menu就恢复初始位置
+            $(".header-menu-middle1").css({transform:"rotate(0deg)",transition:""});
+            $(".header-menu-middle2").css({transform:"rotate(0deg)",transition:""});
+            menu_middle=true;
+        }else{
+            //如果true header-menu就变成X；
+            $(".header-menu-middle1").css({transform:"rotate(45deg)",transition:"all 0.4s"});
+            $(".header-menu-middle2").css({transform:"rotate(-45deg)",transition:"all 0.4s"});
+            menu_middle=false;
+        }
+    });
+    $(".header-menu-title").click(function(){
+        $(".header-menu-con-child").find("span").css("color","");//清空颜色
+        $(this).find("span").css("color","#C6361F");//设置颜色
+        event.stopPropagation();
+    });
+    $(".header-menu-title em").click(function(){
+        $(this).parent().parent().parent().siblings().children("ul").slideUp();//让父标签的兄弟标签的子标签 隐藏
+        $(this).parent().parent().siblings("ul").slideToggle();
+        event.stopPropagation();
+    });
+    //首页第二个手风琴效果
+    $(".footer-menu-con-child").click(function(){
+        $(this).siblings().children(".footer-menu-con-grandson").slideUp();
+        $(this).children(".footer-menu-con-grandson").slideToggle();
+    });
+
+    var h2=675;
+    var T;
+    var i=0;
+    $(".dd2").click(function() {
+        var h=document.body.scrollTop || document.documentElement.scrollTop;//当前卷入的高度
+        function move(){
+            i=i+(0.1);
+            h=h+i;
+
+            if(h>=675){
+                i=0;
+                if($(window).width()<=388){
+                    document.body.scrollTop=h2-20;
+                    document.documentElement.scrollTop=h2-20;
+                }else{
+                    document.body.scrollTop=h2;
+                    document.documentElement.scrollTop=h2;
+                }
+
+                clearInterval(T);
+                return '';//
+            }
+            document.body.scrollTop=h;
+            document.documentElement.scrollTop=h;
+        }
+        T=setInterval(move,1);
+    })
+
+    $(".dd3").click(function(){
+        $(".none").slideToggle();
+    })
+</script>
+</body>
+</html>
